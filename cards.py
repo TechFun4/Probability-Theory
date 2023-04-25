@@ -1,7 +1,8 @@
 import random
 
 # Scenario: There are 20 cards and 4 players. In the 20 cards, there is 1 card that award a point. 4 players take turns drawing a card until the point is awarded to a player. The process is repeated.
-# This project attempts to discover if the game is fair or if move order matters by running computer simulations.
+# Purpose: This project attempts to discover if the game is fair or if move order matters by running computer simulations.
+# Findings: This game is completely fair. All players have equal chances of winning, no matter what the move order is. I tried changing numbers, and I found that the chances of winning for each player is simply # of draws possible/# of cards. For example, if there are 2 players and 3 cards, player 1 has a 2/3 chance of winning while player 2 has a 1/3 chance of winning. This is because player 1 can draw 2 cards while player 2 can only draw 1. The # of cards that award points do not matter.
 
 class Probability():
   def __init__(self):
